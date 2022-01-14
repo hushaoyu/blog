@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hushaoyu.github.io/2022/01/14/nodeppt-css/</loc>
+    <lastmod>2022-01-14</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/14/%E7%94%9F%E6%88%90PPT-nodeppt/</loc>
+    <lastmod>2022-01-14</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/14/React-%E5%9F%BA%E7%A1%80%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2022-01-14</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/14/webpack-%E6%8A%80%E5%B7%A7%E7%AF%87/</loc>
+    <lastmod>2022-01-14</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/13/CSS-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-01-13</lastmod>
+  </url>
+  <url>
     <loc>https://hushaoyu.github.io/2022/01/10/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2022-01-11</lastmod>
   </url>

@@ -4,5 +4,5 @@
 node_modules
 #过滤 build部署文件夹
 build
-#过滤 产品线代码
-#src/productLine
+#过滤 编译文件夹
+public

@@ -1,1 +1,8 @@
-module.exports=function(){var e=0;return function(){var n="pjax"+(new Date).getTime()+"_"+e;return e++,n}}();
+module.exports = (function() {
+  var counter = 0;
+  return function() {
+    var id = "pjax" + new Date().getTime() + "_" + counter;
+    counter++;
+    return id;
+  };
+})();

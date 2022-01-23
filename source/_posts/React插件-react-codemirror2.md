@@ -42,7 +42,7 @@ $ npm install react-codemirror2 codemirror --save
   - [内联](https://codemirror.net/doc/manual.html#mark_replacedWith) 和 [块级](https://codemirror.net/doc/manual.html#mark_replacedWith) 的小部件
   - 文本标记：[受控样式](https://codemirror.net/doc/manual.html#mark_replacedWith) 、[只读](https://codemirror.net/doc/manual.html#markText) 、[原子](https://codemirror.net/doc/manual.html#markText)
   - [双向文本支持](https://codemirror.net/demo/bidi.html) ：`LRT`、`RTL`
-  - [搜索功能](#)
+  - [搜索](#search-func)
     
 #### 使用
 - 文件引入
@@ -143,14 +143,14 @@ import 'codemirror/addon/fold/brace-fold';
 import 'codemirror/addon/fold/comment-fold';
 ```
 - `option` 添加配置
-```yaml
-foldGutter: true,
+```JavaScript
+foldGutter: true, // 支持折叠
 lineWrapping: true,
 gutters: ['CodeMirror-linenumbers', 'CodeMirror-foldgutter', 'CodeMirror-lint-markers'],
 ```
-![预览](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/React%E6%8F%92%E4%BB%B6%20-%20react-codemirror2/code_fold.png)
+![预览](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/React%E6%8F%92%E4%BB%B6%20-%20react-codemirror2/code-fold.gif)
 
-#### 搜索
+#### <span id='search-func'>搜索</span>
 - 引入样式及脚本文件
 ```javascript
 // 搜索
@@ -263,3 +263,6 @@ validCheck = (marks) => {
 }
 ```
 ![预览](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/React%E6%8F%92%E4%BB%B6%20-%20react-codemirror2/javascript-lint-state.gif)
+
+#### 代码合并
+- [参考文档](https://github.com/scniro/react-codemirror2/issues/123)

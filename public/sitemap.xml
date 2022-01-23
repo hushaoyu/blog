@@ -201,6 +201,13 @@
   </url>
   
   <url>
+    <loc>https://hushaoyu.github.io/tags/Hexo/</loc>
+    <lastmod>2022-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://hushaoyu.github.io/tags/Markdown/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
@@ -209,13 +216,6 @@
   
   <url>
     <loc>https://hushaoyu.github.io/tags/handbook/</loc>
-    <lastmod>2022-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hushaoyu.github.io/tags/Hexo/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -278,14 +278,14 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/test/</loc>
+    <loc>https://hushaoyu.github.io/tags/nodeppt/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/nodeppt/</loc>
+    <loc>https://hushaoyu.github.io/tags/test/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -329,14 +329,14 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/handbook/</loc>
+    <loc>https://hushaoyu.github.io/categories/Hexo/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/Hexo/</loc>
+    <loc>https://hushaoyu.github.io/categories/handbook/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -357,7 +357,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/handbook/Markdown/</loc>
+    <loc>https://hushaoyu.github.io/categories/nodeppt/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -365,13 +365,6 @@
   
   <url>
     <loc>https://hushaoyu.github.io/categories/test/</loc>
-    <lastmod>2022-01-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hushaoyu.github.io/categories/nodeppt/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -393,6 +386,13 @@
   
   <url>
     <loc>https://hushaoyu.github.io/categories/PPT/</loc>
+    <lastmod>2022-01-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hushaoyu.github.io/categories/handbook/Markdown/</loc>
     <lastmod>2022-01-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

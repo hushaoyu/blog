@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hushaoyu.github.io/2022/01/23/React%E6%8F%92%E4%BB%B6-react-codemirror2/</loc>
+    <lastmod>2022-01-23</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/13/CSS-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-01-21</lastmod>
+  </url>
+  <url>
     <loc>https://hushaoyu.github.io/2022/01/18/Echarts-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-01-18</lastmod>
   </url>
@@ -23,10 +31,6 @@
   <url>
     <loc>https://hushaoyu.github.io/2022/01/14/webpack-%E6%8A%80%E5%B7%A7%E7%AF%87/</loc>
     <lastmod>2022-01-14</lastmod>
-  </url>
-  <url>
-    <loc>https://hushaoyu.github.io/2022/01/13/CSS-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2022-01-13</lastmod>
   </url>
   <url>
     <loc>https://hushaoyu.github.io/2022/01/10/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</loc>

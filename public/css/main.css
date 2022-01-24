@@ -290,6 +290,8 @@ kbd {
 }
 blockquote {
   border-left: 4px solid #f39406;
+  box-shadow: 0 0 3px 3px rgba(110,109,109,0.569);
+  border-radius: 3px;
 }
 .table-container {
   overflow: auto;
@@ -1290,7 +1292,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9f096a;
+  background: #c6ff79;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1677,11 +1679,11 @@ li.recent_posts_li {
   margin: -20px auto 15px;
   text-align: center;
 }
-.post-body p a {
+.post-body a {
   color: #0593d3;
   border-bottom: none;
 }
-.post-body p a:hover {
+.post-body a:hover {
   color: #ff106c;
   text-decoration: underline;
 }
@@ -2904,3 +2906,38 @@ ul.breadcrumb li + li:last-child {
     margin: 8px 0 0;
   }
 }
+table {
+  width: 100%; /*表格宽度*/
+  max-width: 65em; /*表格最大宽度，避免表格过宽*/
+  border: 1px solid #dedede; /*表格外边框设置*/
+  margin: 15px auto; /*外边距*/
+  border-collapse: collapse; /*使用单一线条的边框*/
+  empty-cells: show; /*单元格无内容依旧绘制边框*/
+  border-radius: 4px;
+}
+
+table th,table td {
+  height: 35px; /*统一每一行的默认高度*/
+  border: 1px solid #dedede; /*内部边框样式*/
+  padding: 0 10px; /*内边距*/
+}
+table th {
+  font-weight: bold; /*加粗*/
+  text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
+  background: rgba(158,188,226,0.2); /*背景色*/
+}
+table th {
+  white-space: nowrap; /*表头内容强制在一行显示*/
+}
+table td:nth-child(1) {
+  /*首列不换行*/
+  white-space: nowrap;
+}
+table tbody tr:nth-child(2n) {
+  /*隔行变色*/
+  background: rgba(102, 128, 153, 0.05);
+}
+table tr:hover {
+  background: rgba(245, 166, 5, 0.77);
+}
+

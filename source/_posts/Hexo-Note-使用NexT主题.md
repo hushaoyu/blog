@@ -84,13 +84,23 @@ back2top:
 #### 修改链接文字样式
 - 在文件 `themes/next/source/css/_common/components/post/post.styl` 中，添加以下代码
 ```less
-.post-body p a{
+.post-body a{
   color: #0593d3;
   border-bottom: none;
   &:hover {
     color: #ff106c;
     text-decoration: underline;
   }
+}
+```
+
+#### 设置引用块样式
+- 在文件 `themes/next/source/css/_common/scaffolding/base.styl` 中添加如下样式
+```css
+blockquote {
+  border-left: 4px solid #f39406;
+  box-shadow: 0 0 3px 3px #6e6d6d91;
+  border-radius: 3px;
 }
 ```
 

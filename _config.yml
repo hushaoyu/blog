@@ -113,7 +113,7 @@ algolia:
   indexName: "dev_blog"
 # 首页
 excerpt:
-  depth: 3  #按层来算，也就是按代码块来算
+  depth: 2  #按层来算，也就是按代码块来算
   excerpt_excludes: []
   more_excludes: []
   hideWholePostExcerpts: true

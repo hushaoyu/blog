@@ -104,6 +104,31 @@ blockquote {
 }
 ```
 
+#### 设置可折叠内容样式
+- 在 `themes/next/source/css/_custom` 路径下新建文件 `default.css`
+```css
+details {
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 3px #666565ad;
+  border-radius: 5px;
+}
+details:hover {
+  box-shadow: 0 0 3px 3px rgba(101, 243, 243, 0.71);
+}
+details > summary {
+  cursor: pointer;
+  text-decoration: underline;
+}
+details > summary:hover {
+  text-decoration: none;
+}
+```
+- 在 `themes/next/source/css/main.styl` 文件底部引入上述新增样式文件
+```less
+@import "_custom/default.css";
+```
+![预览](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/details-style.gif)
+
 #### 设置头像的悬停效果
 - 在主题配置文件中，找到 `avatar` 配置，将其 `rotated` 属性设置为 `true`
 ```yaml

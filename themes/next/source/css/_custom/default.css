@@ -1,0 +1,15 @@
+details {
+  padding: 4px 6px;
+  box-shadow: 0 0 3px 3px #666565ad;
+  border-radius: 5px;
+}
+details:hover {
+  box-shadow: 0 0 3px 3px rgba(65, 148, 255, 0.75);
+}
+details > summary {
+  cursor: pointer;
+  text-decoration: underline;
+}
+details > summary:hover {
+  text-decoration: none;
+}

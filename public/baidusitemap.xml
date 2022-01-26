@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://hushaoyu.github.io/2022/01/24/Hexo-%E6%8C%81%E7%BB%AD%E6%94%B9%E8%BF%9B/</loc>
+    <lastmod>2022-01-26</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/26/TypeScript-React%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/</loc>
+    <lastmod>2022-01-26</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/10/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</loc>
+    <lastmod>2022-01-26</lastmod>
+  </url>
+  <url>
     <loc>https://hushaoyu.github.io/2022/01/25/Typescript-%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2022-01-25</lastmod>
+    <lastmod>2022-01-26</lastmod>
+  </url>
+  <url>
+    <loc>https://hushaoyu.github.io/2022/01/26/JavaScript-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2022-01-26</lastmod>
   </url>
   <url>
     <loc>https://hushaoyu.github.io/2022/01/25/%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</loc>
     <lastmod>2022-01-25</lastmod>
   </url>
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/10/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</loc>
-    <lastmod>2022-01-24</lastmod>
-  </url>
-  <url>
     <loc>https://hushaoyu.github.io/2022/01/24/ThreeJS-%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</loc>
-    <lastmod>2022-01-24</lastmod>
-  </url>
-  <url>
-    <loc>https://hushaoyu.github.io/2022/01/24/Hexo-%E6%8C%81%E7%BB%AD%E6%94%B9%E8%BF%9B/</loc>
     <lastmod>2022-01-24</lastmod>
   </url>
   <url>

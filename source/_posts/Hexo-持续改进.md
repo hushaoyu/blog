@@ -7,6 +7,9 @@ categories: [Hexo]
 #### 表格样式改进
 - 在 `themes/next/source/css` 目录下新建目录 `_custom`，并新建表格样式文件 `table.css`，样式内容如下：
 
+<details>
+<summary>CSS</summary>
+
 ```css
 table {
   width: 100%; /*表格宽度*/
@@ -43,6 +46,8 @@ table tr:hover {
   background: rgba(245, 166, 5, 0.77);
 }
 ```
+</details>
+
 - 在 `themes/next/source/css/main.styl` 文件的最底部，引入表格样式文件
 > 注意：引用的文件路径为相对该 `main.styl` 的路径
 ```css

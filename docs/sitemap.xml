@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/10/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/10/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/</loc>
     
     <lastmod>2022-02-13</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/404.html</loc>
+    <loc>https://hushaoyu.github.io/blog/404.html</loc>
     
     <lastmod>2022-02-13</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/02/13/JavaScirpt-%E6%AD%A3%E5%88%99%E6%94%B6%E5%BD%95/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/02/13/JavaScirpt-%E6%AD%A3%E5%88%99%E6%94%B6%E5%BD%95/</loc>
     
     <lastmod>2022-02-13</lastmod>
     
@@ -29,7 +29,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/26/JavaScript-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/26/JavaScript-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
     
     <lastmod>2022-02-13</lastmod>
     
@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/26/TypeScript-React%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/26/TypeScript-React%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84%E7%B1%BB%E5%9E%8B%E6%B3%A8%E8%A7%A3/</loc>
     
     <lastmod>2022-02-11</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/24/Hexo-%E6%8C%81%E7%BB%AD%E6%94%B9%E8%BF%9B/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/24/Hexo-%E6%8C%81%E7%BB%AD%E6%94%B9%E8%BF%9B/</loc>
     
     <lastmod>2022-01-26</lastmod>
     
@@ -56,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/25/Typescript-%E5%9F%BA%E7%A1%80/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/25/Typescript-%E5%9F%BA%E7%A1%80/</loc>
     
     <lastmod>2022-01-26</lastmod>
     
@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/25/%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/25/%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/</loc>
     
     <lastmod>2022-01-25</lastmod>
     
@@ -74,7 +74,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/24/ThreeJS-%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/24/ThreeJS-%E7%9F%A5%E8%AF%86%E4%BD%93%E7%B3%BB/</loc>
     
     <lastmod>2022-01-24</lastmod>
     
@@ -83,7 +83,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/23/React%E6%8F%92%E4%BB%B6-react-codemirror2/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/23/React%E6%8F%92%E4%BB%B6-react-codemirror2/</loc>
     
     <lastmod>2022-01-23</lastmod>
     
@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/13/CSS-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/13/CSS-%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
     
     <lastmod>2022-01-21</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/18/Echarts-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/18/Echarts-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2022-01-18</lastmod>
     
@@ -110,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/17/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/17/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F-%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
     
     <lastmod>2022-01-17</lastmod>
     
@@ -119,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/14/nodeppt-css/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/14/nodeppt-css/</loc>
     
     <lastmod>2022-01-14</lastmod>
     
@@ -128,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/14/%E7%94%9F%E6%88%90PPT-nodeppt/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/14/%E7%94%9F%E6%88%90PPT-nodeppt/</loc>
     
     <lastmod>2022-01-14</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/14/React-%E5%9F%BA%E7%A1%80%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/14/React-%E5%9F%BA%E7%A1%80%E5%BC%80%E5%8F%91%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2022-01-14</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/14/webpack-%E6%8A%80%E5%B7%A7%E7%AF%87/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/14/webpack-%E6%8A%80%E5%B7%A7%E7%AF%87/</loc>
     
     <lastmod>2022-01-14</lastmod>
     
@@ -155,7 +155,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/09/Hexo-Note-%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/09/Hexo-Note-%E5%91%BD%E4%BB%A4/</loc>
     
     <lastmod>2022-01-10</lastmod>
     
@@ -164,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/09/Hexo-Note-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/09/Hexo-Note-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%8F%8A%E5%B8%B8%E7%94%A8%E9%85%8D%E7%BD%AE/</loc>
     
     <lastmod>2022-01-10</lastmod>
     
@@ -173,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/05/Markdown-using-document/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/05/Markdown-using-document/</loc>
     
     <lastmod>2022-01-10</lastmod>
     
@@ -182,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/index.html</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/index.html</loc>
     
     <lastmod>2022-01-07</lastmod>
     
@@ -191,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/2022/01/05/There-js%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97%E4%B9%8BReact%E4%B8%AD%E4%BD%BF%E7%94%A8Three-js/</loc>
+    <loc>https://hushaoyu.github.io/blog/2022/01/05/There-js%E5%85%A5%E9%97%A8%E7%B3%BB%E5%88%97%E4%B9%8BReact%E4%B8%AD%E4%BD%BF%E7%94%A8Three-js/</loc>
     
     <lastmod>2022-01-07</lastmod>
     
@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/index.html</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/index.html</loc>
     
     <lastmod>2022-01-06</lastmod>
     
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/index.html</loc>
+    <loc>https://hushaoyu.github.io/blog/index.html</loc>
     
     <lastmod>2022-01-06</lastmod>
     
@@ -219,7 +219,7 @@
   
 
   <url>
-    <loc>https://hushaoyu.github.io/</loc>
+    <loc>https://hushaoyu.github.io/blog</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -227,168 +227,168 @@
 
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/Echarts/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/CSS/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/CSS/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/Echarts/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/Hexo/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/Hexo/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/JavaScript/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/JavaScript/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E6%AD%A3%E5%88%99/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E6%AD%A3%E5%88%99/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/Markdown/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/Markdown/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/handbook/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/handbook/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/React/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/React/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/react-codemirror2/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/creat-react-app/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E6%A1%86%E6%9E%B6%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/creat-react-app/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/react-codemirror2/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/web/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/web/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/ThreeJS/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/ThreeJS/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/encrypt/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/encrypt/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/ThreeJs/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/ThreeJs/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/TypeScript/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/TypeScript/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/nodeppt/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/nodeppt/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/webpack/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/webpack/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/PPT/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/tags/PPT/</loc>
+    <loc>https://hushaoyu.github.io/blog/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -397,147 +397,147 @@
 
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/Echarts/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/CSS/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/CSS/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/Echarts/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/Hexo/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/Hexo/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/JavaScript/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/JavaScript/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/handbook/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/handbook/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/React/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/React/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/web/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/web/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/ThreeJs/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/ThreeJs/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/TypeScript/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/TypeScript/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/nodeppt/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/nodeppt/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/JavaScript/%E6%AD%A3%E5%88%99/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/JavaScript/%E6%AD%A3%E5%88%99/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/webpack/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/webpack/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/PPT/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/PPT/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%EF%BC%8C%E5%BC%80%E5%8F%91%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/handbook/Markdown/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/handbook/Markdown/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/React/%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/React/create-react-app/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/React/create-react-app/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/React/%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/web/ThreeJS/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/web/ThreeJS/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/TypeScript/React-Props/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/TypeScript/React-Props/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://hushaoyu.github.io/categories/PPT/nodeppt/</loc>
+    <loc>https://hushaoyu.github.io/blog/categories/PPT/nodeppt/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

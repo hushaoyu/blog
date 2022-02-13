@@ -156,7 +156,7 @@ excerpt:
   more_excludes: []
   hideWholePostExcerpts: true
 ```
-- [在线预览](https://hushaoyu.github.io/)
+- [在线预览](https://hushaoyu.github.io/blog/)
 - ![首页](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/home.png)
 
 #### 首页阅读更多按钮样式更改
@@ -370,7 +370,7 @@ pace:
 </div>
 {% include 'tag-color.swig' %}
 ```
-- 重新构建部署项目，即可查看效果。[在线预览](https://hushaoyu.github.io/tags/)
+- 重新构建部署项目，即可查看效果。[在线预览](https://hushaoyu.github.io/blog/tags/)
 - ![标签页](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/Hexo-Note-%E4%BD%BF%E7%94%A8NexT%E4%B8%BB%E9%A2%98/tag_page.png)
 
 #### 标签云

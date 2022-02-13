@@ -1,5 +1,5 @@
 ---
-title: JavaScirpt 正则收录
+title: JavaScript 正则收录
 date: 2022-02-13 10:58:35
 tags: [JavaScript, 正则]
 categories: [JavaScript, 正则]

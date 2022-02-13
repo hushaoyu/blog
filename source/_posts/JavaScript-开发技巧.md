@@ -300,3 +300,247 @@ export function request(url, options) {
     return fetch(url, {...options, credentials: 'include', signal: getAbortController() && getAbortController().signal})
 }
 ```
+
+#### 可拖动元素
+- 页面结构
+```html
+<div
+    ref={this.containerRef}
+    className={classnames({
+        'sql-wrapper': true,
+        'show': this.state.visible,
+        'hide': !this.state.visible,
+        'position-modal': this.state.modal === 'absolute'
+        })}
+        style={{left: this.state.position.left, top: this.state.position.top}}
+        draggable={this.state.modal === 'absolute'}
+        onDragEnd={this.dragEnd}
+        onMouseDown={this.mouseDown}
+>
+<p>
+    SQL预览
+    <div className='icon-container'>
+        <Icon title={this.state.modal === 'default' ? '展开' : '收缩'} type={this.state.modal === 'default' ? 'fullscreen' : 'fullscreen-exit'} onClick={this.changeModal} />
+        <Icon className='private-clipboard-icon' title='复制' type='copy' />
+        {this.state.visible ? <Icon title='收起' type='arrow-down' onClick={this.changeView} /> : <Icon type='arrow-up' title='展开' onClick={this.changeView} />}
+    </div>
+</p>
+<div className='highLight-sql'>
+    <Highlight languageName="sql" style={{ whiteSpace: 'pre-wrap' }}>
+    {sqlFormatter.format(_.get(this.props.alarm, 'sql', ''))}
+    </Highlight>
+</div>
+</div>
+```
+- 思路: 通过元素的 `left` 及 `top` 样式属性,对元素进行绝对定位,拖动过程中改变元素这两个属性,达到拖动元素的目的.
+  - 关键属性,更多鼠标事件属性参考 [Link](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)
+    - clientX: 鼠标触发事件当前的x坐标
+    - clientY: 鼠标触发事件当前的y坐标
+    - element.offsetLeft: 当前拖动元素距离浏览器视口左侧边缘的距离
+    - element.offsetTop: 当前拖动元素距离浏览器视口上方边缘的距离
+  - 监听 `onmousedown` 事件,获取按下鼠标时,鼠标初始的坐标,并减去拖动元素的相对偏移距离,得到鼠标在元素内的相对位置
+  ```javascript
+  mouseDown = ({clientX, clientY}) => {
+        const element = document.getElementsByClassName('sql-wrapper')[0];
+        const offsetX = clientX - element.offsetLeft;
+        const offsetY = clientY - element.offsetTop;
+        this.setState({
+            offsetX,
+            offsetY
+        })
+    }
+  ```
+  - 监听 `ondragend` 事件,获取拖动结束时,当前鼠标的坐标.并减去鼠标在拖动元素内的相对位置,得到拖动元素左上角的坐标,及拖动元素样式的 `left` 和 `top` 值
+  ```html
+  dragEnd = ({clientX, clientY}) => {
+        const {offsetX, offsetY} = this.state;
+        this.setState({
+            position: {
+                left: clientX - offsetX,
+                top: clientY - offsetY
+            }
+        })
+    }
+  ```
+  - 预览
+  ![预览](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/JavaScript%20-%20%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/drag-dom.gif)
+    
+#### 大屏拖动排序
+- 代码文件说明
+  - `MainContentContainer.js`: 大屏页面容器主文件
+  - `DragItem.js`: 拖动元素容器,拖动排序逻辑处理
+- `MainContentContainer.js`
+  - 页面结构
+  ```html
+  <div >
+      <DragItem allData={_.cloneDeep(this.chartsDataInit)} itemData={_.cloneDeep(this.chartsData)} ColItem={ColItem} confirmSort={this.confirmSort}  />
+  </div>
+  ```
+  - `ColItem`: 拖动元素基础结构
+    ```javascript
+    class ColItem extends React.Component {
+        constructor(props) {
+            super(props);
+        }
+    
+        render() {
+            const {V} = this.props;
+            return (
+                <div className='content-charts'>
+                    <div className="chart-header">
+                        <span>{V.title}</span>
+                    </div>
+                    <div className='chart-item'>
+                        <V.component />
+                    </div>
+                </div>
+            )
+        }
+    }
+    ```
+  - 初始化数据说明
+  ```javascript
+  /**
+   * 页面初始化数据
+   * title: 拖动元素图表标题
+   * key: 拖动元素图表key,需要唯一,后续元素遍历时作为元素的key
+   * component: React 组件,业务代码
+   * */
+  chartsDataInit = [
+      {
+          title: '本月活跃用户',
+          key: 'monthUser',
+          component: MonthUser,
+      },
+      ...
+  ];
+  /**
+   * key: 与 chartsDataInit 中的 key 对应,后续用于获取 chartsDataInit 中的 component 信息
+   * span: 与 Antd 的 Col 结合使用,用于百分比布局
+   * index: 表明当前元素的排序序号
+   * */
+  chartsData = [
+      {
+          title: '本月活跃用户',
+          key: 'monthUser',
+          span: 6,
+          index: 0
+      },
+      ...
+  ];
+  ```
+  - `confirmSort`
+  ```javascript
+  /**
+   * 在 DragItem 组件中,拖动排序确认事件将调用此方法,用于更新排序布局
+   * */
+  confirmSort = data => {
+      const editData = _.cloneDeep(data);
+      if (!_.isArray(editData)) {
+          message.warning('数据未更改！');
+          return false;
+      }
+      this.setState({
+          chartsData: editData.map((item, index) => ({
+              ...item,
+              index
+          })),
+      });
+  }
+  ```
+- `DragItem.js`
+  - 添加监听事件: 监听页面快捷键,使用 CTRL + I 键切换成编辑/查看模式; 监听元素的拖动事件
+  ```javascript
+  bindEvents = () => {
+      const elements = document.getElementsByClassName('drag-item');
+      for (let i = 0; i< elements.length; i += 1) {
+          this.onDragListener(elements[i]);
+      }
+
+      // 使用 CTRL + I 键切换成编辑/查看模式
+      document.addEventListener('keydown', this.onKeyDownListener.bind(this));
+  }
+  
+  // 按键事件监听
+  onKeyDownListener = (event) => {
+      const keyCode = event.keyCode || event.which || event.charCode;
+      const keyCombination = event.ctrlKey ;
+      if (keyCombination && keyCode == 73) {
+          if (this.state.mode === 'edit') {
+              this.confirmChange();
+          } else {
+              this.setState({
+                  mode: 'edit'
+              });
+          }
+      }
+  }
+  
+  // 拖拽事件监听
+  onDragListener = (element) => {
+      element.addEventListener('dragstart', event => {
+          this.eventSource = event.target;
+          this.draggingPosition = this.eventSource.getBoundingClientRect();
+          this.sourceKey = this.eventSource.getAttribute('data-key');
+      })
+      element.addEventListener('dragenter', event => {
+          this.eventTarget = event.target;
+          this.draggingOrder = this.changeOrder(this.eventSource);
+          const order = this.changeOrder(this.eventTarget);
+          if (this.state.mode === 'edit') {
+              if (this.draggingOrder > order) {
+                  this.eventTarget.parentElement.insertBefore(this.eventSource, this.eventTarget);
+              } else {
+                  if (this.eventTarget.nextElementSibling) {
+                      this.eventTarget.parentElement.insertBefore(this.eventSource, this.eventTarget.nextElementSibling);
+                  } else {
+                      this.eventTarget.parentElement.appendChild(this.eventSource);
+                  }
+              }
+              this.setEditData(this.sourceKey, this.eventTarget.getAttribute('data-key'), this.draggingOrder - order);
+          }
+      });
+  }
+  
+  // 返回排序
+  changeOrder = node => {
+      const order = Array.from(node.parentElement.children).indexOf(node);
+      return order;
+  }
+  
+  /**
+   * @params:
+   *  sourceKey: 拖拽源节点的key
+   *  targetKey：拖拽目标节点的key
+   *  orderType：boolean。是否前置. 前置表示将源节点放置在目标节点前面.
+   * */
+  setEditData = (sourceKey, targetKey, orderType) => {
+      let sourceIndex, targetIndex;
+      const editData = _.cloneDeep(this.state.editData);
+      editData.map((item, i) => {
+          if (item.key === targetKey) targetIndex = i;
+          if (item.key === sourceKey) sourceIndex = i;
+      });
+      const dragItem = editData.find(item => item.key === sourceKey);
+      if (orderType > 0) {
+          editData.splice(sourceIndex, 1);
+          editData.splice(targetIndex, 0, dragItem);
+
+      } else if (orderType < 0) {
+          editData.splice(targetIndex + 1, 0, dragItem);
+          editData.splice(sourceIndex, 1);
+      }
+      this.props.openModalAction({
+          code: MODAL_CODE_DRAG_LIST,
+          data: _.cloneDeep(editData),
+      });
+      this.setState({
+          editData: editData.map((item, index) => ({
+              ...item,
+              index,
+          }))
+      });
+  }
+  ```
+- 预览
+![预览图](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/JavaScript%20-%20%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/drag-sort.gif)

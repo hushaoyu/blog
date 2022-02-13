@@ -76,8 +76,8 @@ type AppProps = {
   | Expands in error messages and logs	| ✅ | 🚫 | 
   | Can be augmented	| 🚫 | ✅ | 
   | Can be recursive	| ⚠️| ✅ | 
-- `type` 和 `interface` 的区别
-  - 如果在 `type` 类型定义中使用了联合运算符，则不能在具有类型别名的类上使用 `interface`
+- `type alias` 和 `interface` 的区别
+  - 如果在 `type` 类型定义中使用了 `union` 操作符，即 `|`，则不能在具有此类型别名的类上使用 `implements`
   ```typescript
   type dog = {
     color: string
@@ -93,11 +93,58 @@ type AppProps = {
     color = 'red';
     sex = '1';
   }
+  // correct !
+  
   type animal2 = (dog | bean) & cat;
   class cat2 implements animal2 {
     color = 'red';
     sex = '1';
     fly= true;
   }
-  // A class can only implement an object type or intersection of object types with statically known members.
+  // Error! A class can only implement an object type or intersection of object types with statically known members.
   ```
+  - 同理，如果在 `type` 类型定义中使用了 `union` 操作符，即 `|`，则不能在具有此类型别名的接口中使用 `extends`
+  > 与类实现使用类似，接口是一个“静态”蓝图——它不能以一种或另一种形式存在，因此不能通过联合类型合并来扩展.
+  ```typescript
+  type dog = {
+    color: string
+  }
+  type bean = {
+    fly: boolean
+  }
+  interface cat {
+    sex: string
+  }
+  type animal1 = dog & cat & bean;
+  interface cat1 extends animal1 {}
+  // correct !
+  
+  type animal2 = (dog | bean) & cat;
+  interface cat2 extends animal2 {}
+  // Error! An interface can only extend an object type or intersection of object types with statically known members.
+  ```
+  - 声明合并并不适用于类型别名
+    - 在 `interface` 中的声明合并：可以多次定义同一个接口，其定义将最终合并为一个
+    ```typescript
+    interface cat {
+        sex: string
+    }
+    interface cat {
+        fat: true
+    }
+    const animal1: cat = {
+        sex: '1',
+        fat: true,
+    }
+    // correct !
+    ```
+    - 在 `type alias` 中，由于类型别名是全局或者模块中唯一的，因此不能重复定义相同名称的类型别名
+    ```typescript
+    type dog = {
+        color: string
+    }
+    type dog = {
+        fly: boolean
+    }
+    // Error! Duplicate identifier 'dog'.
+    ```

@@ -4,6 +4,9 @@ date: 2022-02-13 10:58:35
 tags: [JavaScript, 正则]
 categories: [JavaScript, 正则]
 ---
+<details>
+<summary>code</summary>
+
 ```javascript
 /*端口验证*/
 export const port_reg = /^([0-9]|[1-9]\d|[1-9]\d{2}|[1-9]\d{3}|[1-5]\d{4}|6[0-4]\d{3}|65[0-4]\d{2}|655[0-2]\d|6553[0-5])$/;
@@ -43,3 +46,4 @@ export const office_call = /^(([0-9]{3,4}-)?[0-9]{7,8})$/;
 // 联系方式(手机)
 export const phone_number_reg = /^(0?1[3|4|5|8][0-9]\d{8})$/;
 ```
+</details>

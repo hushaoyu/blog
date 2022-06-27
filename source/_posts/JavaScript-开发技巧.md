@@ -544,3 +544,172 @@ export function request(url, options) {
   ```
 - 预览
 ![预览图](https://hsj-studio.oss-cn-shanghai.aliyuncs.com/blog/articles/JavaScript%20-%20%E5%BC%80%E5%8F%91%E6%8A%80%E5%B7%A7/drag-sort.gif)
+  
+#### 导出数据到 `json` 文件
+```javascript
+/**
+ * @param {string} data 需要导出的json数据
+ * @param {string} fileName 导出的文件名称
+ * */
+export function exportJSON(data, fileName) {
+    const blob = new Blob([data], {type: "text/plain;charset=utf-8"});
+    FileSaver.saveAs(blob, fileName);
+}
+```
+
+#### 读取文件内容
+```javascript
+/**
+ * @desc 读取文件
+ * @param file {File} 文件
+ * @return promise
+ * */
+export function readFileAsDataURL(file) {
+    return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function (event) {
+            resolve(event.target.result);
+        };
+        reader.onerror = function () {
+            reject(false);
+        };
+    })
+}
+```
+
+#### 字符串与 `Uint8Array` 互转
+##### 将字符串转换为 `Uint8Array`
+```javascript
+export function stringToUint8Array(str) {
+    const arr = [];
+    for (let i = 0, j = str.length; i < j; i += 1) {
+        arr.push(str.charCodeAt(i));
+    }
+
+    return new Uint8Array(arr);
+}
+```
+
+##### 将Uint8Array转换为字符串
+```javascript
+export function Uint8ArrayToString(fileData) {
+    let dataString = "";
+    for (let i = 0; i < fileData.length; i += 1) {
+        dataString += String.fromCharCode(fileData[i]);
+    }
+
+    return dataString
+}
+```
+
+#### `url` 编码与解码
+```javascript
+/**
+ * desc 将字符串内容先进行url编码，再进行base64编码
+ * */
+export function base64Encode(str) {
+    return str && btoa(encodeURIComponent(str));
+}
+
+/**
+ * desc 将进行url编码，再进行base64编码的内容，进行解码
+ * */
+export function base64Decode(str) {
+    return str && decodeURIComponent(atob(str));
+}
+```
+
+#### 将三位的十六进制颜色值转换为六位
+```javascript
+/**
+ * desc 将三位的十六进制颜色值转换为六位
+ * @param hex - 需要转换的颜色值，如 #fff
+ * */
+export function hexToHex(hex = '') {
+    let rrggbb = "#";
+    for (let i = 1; i < hex.length; i++) {
+        rrggbb += (hex.charAt(i) + "" + hex.charAt(i));
+    }
+    return rrggbb;
+}
+```
+
+#### 多层级的对象下钻降维成一层结构的对象
+```javascript
+/**
+ * desc 多层级的对象下钻降维成一层结构的对象，多层级对象的级联key使用指定的连接字符进行拼接成新的key
+ * @param source - 需要降维的源对象
+ * @param target - 需要与降维后的对象合并的目标对象
+ * @param {String} suffix - 降维时，如果当前key的值为对象，需要下钻进行降维，此时将当前key与linkStr拼接成新的key，作为目标对象的key
+ * @param {String} linkStr - 下钻降维时，拼接层级对象key的字符，默认为 '.'
+ * @return {Object} obj 返回一层结构的对象
+ * @example {key1: key2: {key3: value1}, key4: {key5: value2}} => {key1.key2.key3: value1, key1.key4.key5: value2}
+ * */
+export function flatObj(source = {}, target = {}, suffix = '', linkStr = '.') {
+    let obj = target || {};
+    if (typeof source === 'object') {
+        Object.keys(source).map(item => {
+            if (typeof source[item] === 'object' && !_.isArray(source[item])) {
+                flatObj(source[item], obj, `${suffix}${item}${linkStr}`);
+            } else {
+                obj[`${suffix}${item}`] = _.isArray(source[item]) ? JSON.stringify(source[item]) : source[item];
+            }
+        })
+    }
+
+    return obj;
+}
+```
+
+#### 将使用特定字符拼接的字符串，构造成多层级的对象
+```javascript
+/**
+ * desc 将使用特定字符拼接的字符串，构造成多层级的对象
+ * @param {String} keys 使用指定字符拼接key后的keys字符串
+ * @param value 当前keys对应的值
+ * @param {String} linkStr 拼接字符串的字符
+ * @return {Object} outerObj 输出构造后的多层级对象
+ * @example '{key1.key2: value}' => {key1: {key2: value}}
+ * */
+export function increaseObj(keys, value, suffix = '', linkStr = '.') {
+    let outerObj = {};
+    keys.split(linkStr).reverse().map((key, index) => {
+        let innerObj = index === 0 ? {} : _.cloneDeep(outerObj);
+        if (index === 0) {
+            let parseValue;
+            try {
+                parseValue = JSON.parse(value);
+            } catch (e) {
+                console.log('parse error');
+            }
+            innerObj[key] = _.isArray(parseValue) ? parseValue : value;
+            outerObj = _.cloneDeep(innerObj);
+        } else {
+            outerObj[key] = _.cloneDeep(innerObj);
+            delete outerObj[keys.split(linkStr).reverse()[index - 1]]
+        }
+    });
+
+    return outerObj;
+}
+```
+
+#### 根据中心点、起始点、终点判断旋转角
+```javascript
+/**
+ * @desc 根据中心点、起始点、终点判断旋转方向。Math.atan2返回反正切的方位角的弧度值
+ * @param center {Object} {x: 0, y: 0} 中心点坐标
+ * @param start {Object} {x: 0, y: 0} 起始点坐标
+ * @param end {Object} {x: 0, y: 0} 终点坐标
+ * @return {number} 旋转角的 Math.atan2 值，即旋转角的弧度值
+ * */
+export function rotateAngle(center, start, end) {
+    let rotateA = 0; // 鼠标旋转角弧度值
+    const sAngle = Math.atan2((start.y - center.y), (start.x - center.x));
+    const pAngle = Math.atan2((end.y - center.y), (end.x - center.x));
+    rotateA = (pAngle - sAngle);
+
+    return rotateA;
+}
+```
